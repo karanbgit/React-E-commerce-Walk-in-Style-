@@ -20,13 +20,18 @@ export default function AdminLogin() {
 
         if (input.username === "admin" && input.password === "admin") {
             navigate("/admin")
+         
         }
         else {
             Swal.fire({
                 icon: "error",
                 title: "Oops...",
-                text: "All fields are Mandatory...!",
+                text: "Invalid Credantials...!",
             });
+            setInput({
+                username: "",
+                password: ""
+            })
         }
 
     }
