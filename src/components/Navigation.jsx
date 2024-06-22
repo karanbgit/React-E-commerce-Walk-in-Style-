@@ -16,18 +16,11 @@ function Navigation() {
 							<div class="col-sm-7 col-md-9">
 								<div id="colorlib-logo">
 									<Link to={"/"}>
-										<img style={{ width: "250px" }} src={require("../assets/images/logo.jpg")} />
+										<img style={{ width: "280px", height:"120px" }} src={require("../assets/images/logo-new.png")} />
 									</Link>
 								</div>
 							</div>
-							<div class="col-sm-5 col-md-3">
-								<form action="#" class="search-wrap">
-									<div class="form-group">
-										<input type="search" class="form-control search" placeholder="Search" />
-										<button class="btn btn-primary submit-search text-center" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-									</div>
-								</form>
-							</div>
+							
 						</div>
 						<div class="row">
 							<div class="col-sm-12 text-left menu-1">
@@ -38,7 +31,7 @@ function Navigation() {
 									<li className="nav-item"><Link className="nav-link" to={"/about"}>About</Link></li>
 									<li className="nav-item"><Link className="nav-link" to={"/contact"}>Contact</Link></li>
 									{/* <li className="nav-item"><Link className="nav-link" to={"/checkoutpage"}>CheckOutPage</Link></li> */}
-									<li className="nav-item"><Link className="nav-link" to={"/productdetail"}>Product Details</Link></li>
+									{/* <li className="nav-item"><Link className="nav-link" to={"/productdetail"}>Product Details</Link></li> */}
 									<li className="nav-item"><Link className="nav-link" to={"/login"}>Admin Login</Link></li>
 									<li class="cart nav-item"><Link className="nav-link" to={"/cart"} ><i class="fa-solid fa-cart-shopping"></i> Cart[{count.length}]</Link>
 									</li>

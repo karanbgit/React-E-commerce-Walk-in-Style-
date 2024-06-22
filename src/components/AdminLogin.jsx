@@ -1,8 +1,35 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
+import Swal from 'sweetalert2'
 
 
 export default function AdminLogin() {
+
+    const navigate = useNavigate();
+    const [input, setInput] = useState({
+        username: "",
+        password: ""
+    })
+
+    function handelChange(e) {
+        setInput({ ...input, [e.target.id]: e.target.value });
+    }
+
+    function handelSubmit(e) {
+        e.preventDefault()
+
+        if (input.username === "admin" && input.password === "admin") {
+            navigate("/admin")
+        }
+        else {
+            Swal.fire({
+                icon: "error",
+                title: "Oops...",
+                text: "All fields are Mandatory...!",
+            });
+        }
+
+    }
     return (
         <>
             <div className="container">
@@ -16,17 +43,18 @@ export default function AdminLogin() {
                                         <form>
                                             {/* <!-- Email input --> */}
                                             <div data-mdb-input-init class="form-outline mb-4">
-                                                <input type="text" class="form-control" />
+
+                                                <input type="text" id='username' value={input.username} onChange={(e) => handelChange(e)} class="form-control" />
                                                 <label class="form-label">Username</label>
                                             </div>
                                             {/* <!-- Password input --> */}
                                             <div data-mdb-input-init class="form-outline mb-4">
-                                                <input type="password" class="form-control" />
+                                                <input type="password" id='password' value={input.password} onChange={(e) => handelChange(e)} class="form-control" />
                                                 <label class="form-label" for="form3Example4">Password</label>
                                             </div>
 
                                             <Link to={"/admin"}>
-                                                <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block mb-4">Login</button>
+                                                <button onClick={handelSubmit} type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block mb-4">Login</button>
                                             </Link>
                                         </form>
                                     </div>

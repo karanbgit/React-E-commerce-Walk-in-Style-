@@ -41,7 +41,7 @@ export default function CheckOutPage() {
                 text: "All fields are Mandatory...!",
             });
         }
-        if(terms){
+        else if(terms){
             Swal.fire({
                 icon: "error",
                 title: "Oops...",

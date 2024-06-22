@@ -139,51 +139,7 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                    <div class="w-100"></div>
-                    <div class="col-lg-3 mb-4 text-center">
-                        <div class="product-entry border">
-                            <a href="#" class="prod-img">
-                                <img src={require("../assets/images/item-9.jpg")} class="img-fluid" alt="Free html5 bootstrap 4 template" />
-                            </a>
-                            <div class="desc">
-                                <h2><a href="#">Women's Boots Shoes Maca</a></h2>
-                                <span class="price">$139.00</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 mb-4 text-center">
-                        <div class="product-entry border">
-                            <a href="#" class="prod-img">
-                                <img src={require("../assets/images/item-10.jpg")} class="img-fluid" alt="Free html5 bootstrap 4 template" />
-                            </a>
-                            <div class="desc">
-                                <h2><a href="#">Women's Boots Shoes Maca</a></h2>
-                                <span class="price">$139.00</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 mb-4 text-center">
-                        <div class="product-entry border">
-                            <a href="#" class="prod-img">
-                                <img src={require("../assets/images/item-11.jpg")} class="img-fluid" alt="Free html5 bootstrap 4 template" />
-                            </a>
-                            <div class="desc">
-                                <h2><a href="#">Women's Boots Shoes Maca</a></h2>
-                                <span class="price">$139.00</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 mb-4 text-center">
-                        <div class="product-entry border">
-                            <a href="#" class="prod-img">
-                                <img src={require("../assets/images/item-12.jpg")} class="img-fluid" alt="Free html5 bootstrap 4 template" />
-                            </a>
-                            <div class="desc">
-                                <h2><a href="#">Women's Boots Shoes Maca</a></h2>
-                                <span class="price">$139.00</span>
-                            </div>
-                        </div>
-                    </div>
+         
                 </div>
             </div>
         </div>

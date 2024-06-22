@@ -37,8 +37,10 @@ export default function Sidebar() {
                                             <i class="fas fa-chart-pie fa-fw me-3"></i><span>Add Products</span>
                                         </Link>
 
-                                        <Link to={"/admin/logout"} href="#" class="list-group-item list-group-item-action py-2 ripple"
-                                        ><i class="fas fa-chart-bar fa-fw me-3"></i><span>Logout</span></Link>
+
+                                        <Link to={"/login"}><button  class="list-group-item list-group-item-action py-2 ripple"
+                                        ><i class="fas fa-chart-bar fa-fw me-3"></i><span>Logout</span>
+                                        </button></Link>
                                     </div>
                                 </div>
                             </nav>
