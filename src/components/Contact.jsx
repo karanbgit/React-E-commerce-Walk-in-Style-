@@ -77,7 +77,7 @@ function Contact() {
                                         <div class="w-100"></div>
                                         <div class="col-sm-12">
                                             <div class="form-group">
-                                                <input type="submit" value="Send Message" class="btn btn-primary" />
+                                                <button class="btn btn-secondary" >Submit</button>
                                             </div>
                                         </div>
                                     </div>
