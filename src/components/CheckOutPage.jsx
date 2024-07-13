@@ -39,6 +39,7 @@ export default function CheckOutPage() {
                 icon: "error",
                 title: "Oops...",
                 text: "All fields are Mandatory...!",
+                
             });
         }
         else if(terms){

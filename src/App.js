@@ -37,6 +37,7 @@ function App() {
           <Route path={"/checkoutpage"} element={<CheckOutPage />}></Route>
           <Route path={"/login"} element={<AdminLogin />}></Route>
 
+
           <Route path={"/admin"} element={<Sidebar />}>
             <Route index element={<Dashboard />} />
             <Route path={"/admin/products"} element={<Products />} />
@@ -44,7 +45,6 @@ function App() {
             <Route path={"/admin/logout"} element={<LogoutPage />} />
 
           </Route>
-
         </Routes>
         <Footer />
       </BrowserRouter>
