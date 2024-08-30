@@ -63,6 +63,7 @@ export default function CheckOutPage() {
             })
         }
     }
+
     return (
         <>
             <div className="container">
@@ -126,8 +127,6 @@ export default function CheckOutPage() {
                     </div>
 
                     {/* <h1>Your cart END</h1> */}
-
-
 
                     {/* <h1>Billing address START</h1> */}
                     <div className="col-md-8 order-md-1">
@@ -205,7 +204,7 @@ export default function CheckOutPage() {
                                     <label>Zip <span className='text-danger'>*</span></label>
                                     <input value={address.zip} onChange={(e) => handelChange(e)} type="text" class="form-control" id="zip" placeholder="" required />
                                     <div class="invalid-feedback">
-                                        Zip code required.
+                                           Zip code required.
                                     </div>
                                 </div>
                             </div>
